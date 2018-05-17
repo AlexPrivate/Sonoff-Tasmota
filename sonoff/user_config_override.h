@@ -40,5 +40,6 @@
 //#undef STA_SSID1
 //#endif
 //#define STA_SSID1              "yourssid1"
+#undef USE_HOME_ASSISTANT
 
 #endif  // _USER_CONFIG_OVERRIDE_H_

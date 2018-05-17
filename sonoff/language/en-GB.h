@@ -220,6 +220,7 @@
 #define D_CONFIGURE_WIFI "Configure WiFi"
 #define D_CONFIGURE_MQTT "Configure MQTT"
 #define D_CONFIGURE_DOMOTICZ "Configure Domoticz"
+#define D_CONFIGURE_WIRENBOARD "Configure Wirenboard"
 #define D_CONFIGURE_LOGGING "Configure Logging"
 #define D_CONFIGURE_OTHER "Configure Other"
 #define D_CONFIRM_RESET_CONFIGURATION "Confirm Reset Configuration"
@@ -353,6 +354,11 @@
   #define D_DOMOTICZ_CURRENT "Current"
   #define D_DOMOTICZ_AIRQUALITY "AirQuality"
 #define D_DOMOTICZ_UPDATE_TIMER "Update timer"
+
+// xdrv_06_wb.ino
+#define D_WB_PARAMETERS "Wirenboard parameters"
+#define D_CMND_WB "Wb"
+#define D_WB_CURTAIN "Curtain"
 
 // xdrv_03_energy.ino
 #define D_ENERGY_TODAY "Energy Today"

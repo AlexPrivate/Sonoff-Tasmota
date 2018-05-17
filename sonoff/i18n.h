@@ -323,6 +323,7 @@
 #define D_CMND_UPDATETIMER "UpdateTimer"
 
 // Commands xdrv_06_display.ino
+#define D_CMND_CURTAIN "Curtain"
 #define D_CMND_DISPLAY "Display"
 #define D_CMND_DISP_ADDRESS "Address"
 #define D_CMND_DISP_COLS "Cols"

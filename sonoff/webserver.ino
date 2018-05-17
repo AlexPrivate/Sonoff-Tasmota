@@ -186,6 +186,9 @@ const char HTTP_BTN_MENU3[] PROGMEM =
 #ifdef USE_DOMOTICZ
   "<br/><form action='dm' method='get'><button>" D_CONFIGURE_DOMOTICZ "</button></form>"
 #endif  // USE_DOMOTICZ
+#ifdef USE_WB
+  "<br/><form action='wb' method='get'><button>" D_CONFIGURE_WIRENBOARD "</button></form>"
+#endif  // USE_WB
   "";
 const char HTTP_BTN_MENU4[] PROGMEM =
   "<br/><form action='lg' method='get'><button>" D_CONFIGURE_LOGGING "</button></form>"
@@ -337,6 +340,9 @@ void StartWebserver(int type, IPAddress ipweb)
 #ifdef USE_DOMOTICZ
         WebServer->on("/dm", HandleDomoticzConfiguration);
 #endif  // USE_DOMOTICZ
+#ifdef USE_WB
+        WebServer->on("/wb", HandleWirenboardConfiguration);
+#endif  // USE_WB
       }
       WebServer->on("/lg", HandleLoggingConfiguration);
       WebServer->on("/co", HandleOtherConfiguration);
